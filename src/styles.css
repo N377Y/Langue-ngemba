@@ -14,7 +14,7 @@
   color: var(--texte);
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --vert: #66bb6a;
     --vert-clair: #1f3320;
     --rouge: #ef5350;
@@ -26,15 +26,30 @@
     --bord: #3a3a40;
     --fond: #161618;
     --carte: #222226;
+    color-scheme: dark;
   }
 }
+:root[data-theme="dark"] {
+    --vert: #66bb6a;
+    --vert-clair: #1f3320;
+    --rouge: #ef5350;
+    --rouge-clair: #3a1d1c;
+    --orange: #ffb74d;
+    --orange-clair: #3a2c14;
+    --texte: #ececef;
+    --gris: #a0a0a8;
+    --bord: #3a3a40;
+    --fond: #161618;
+    --carte: #222226;
+    color-scheme: dark;
+}
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--fond); }
+body { margin: 0; background: var(--fond); color: var(--texte); }
 button { font: inherit; color: inherit; cursor: pointer; }
 button:disabled { cursor: default; }
 input, select { font: inherit; color: inherit; background: var(--carte); border: 1px solid var(--bord); border-radius: 8px; padding: 6px 8px; }
 
-.app { max-width: 720px; margin: 0 auto; padding: 16px; min-height: 100vh; }
+.app { max-width: 720px; margin: 0 auto; padding-block: 16px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 header { display: flex; justify-content: space-between; align-items: center; }
 header h1 { color: var(--vert); margin: 0; }
 .stats { display: flex; gap: 16px; font-weight: 600; }
@@ -83,7 +98,7 @@ header h1 { color: var(--vert); margin: 0; }
 .principal { padding: 14px; border: none; border-radius: 12px; background: var(--vert); color: #fff; font-weight: 700; font-size: 1.05rem; text-transform: uppercase; }
 .principal:disabled { background: var(--bord); color: var(--gris); }
 
-.retour { position: fixed; left: 0; right: 0; bottom: 0; padding: 16px max(16px, calc((100vw - 720px) / 2)); display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.retour { position: fixed; left: 0; right: 0; bottom: 0; padding: 16px max(16px, calc((100vw - 720px) / 2)) calc(16px + env(safe-area-inset-bottom, 0px)); display: flex; justify-content: space-between; align-items: center; gap: 16px; }
 .retour.correct { background: var(--vert-clair); color: var(--vert); }
 .retour.tons { background: var(--orange-clair); color: var(--orange); }
 .retour.faux { background: var(--rouge-clair); color: var(--rouge); }
