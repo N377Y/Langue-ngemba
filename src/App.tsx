@@ -45,7 +45,7 @@ export default function App() {
       <header className="entete">
         <div className="entete-int">
           <div className="marque">
-            <Logo taille={38} />
+            <Logo taille={46} />
             <div>
               <div className="marque-nom">poksong</div>
               <div className="marque-devise">Parlons ensemble</div>
