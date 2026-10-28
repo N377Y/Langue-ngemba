@@ -1,0 +1,398 @@
+{
+  "langue": "ngemba",
+  "variete": "Bamougoum (Mugum) – ghomálá' de l'Ouest",
+  "version": 1,
+  "unites": [
+    {
+      "id": "salutations",
+      "titre": "Salutations",
+      "icone": "👋",
+      "lecons": [
+        {
+          "id": "salutations-1",
+          "titre": "Se saluer",
+          "items": [
+            {
+              "id": "bonjour-matin",
+              "fr": "Bonjour (le matin)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "bonjour-jour",
+              "fr": "Bonjour (dans la journée)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "bonsoir",
+              "fr": "Bonsoir",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "bienvenue",
+              "fr": "Bienvenue",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "au-revoir",
+              "fr": "Au revoir",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "merci",
+              "fr": "Merci",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            }
+          ]
+        },
+        {
+          "id": "salutations-2",
+          "titre": "Prendre des nouvelles",
+          "items": [
+            {
+              "id": "comment-vas-tu",
+              "fr": "Comment vas-tu ?",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "je-vais-bien",
+              "fr": "Je vais bien",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "et-toi",
+              "fr": "Et toi ?",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "oui",
+              "fr": "Oui",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "non",
+              "fr": "Non",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "comment-tappelles-tu",
+              "fr": "Comment t'appelles-tu ?",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "je-mappelle",
+              "fr": "Je m'appelle…",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nombres",
+      "titre": "Nombres",
+      "icone": "🔢",
+      "lecons": [
+        {
+          "id": "nombres-1",
+          "titre": "De 1 à 5",
+          "items": [
+            {
+              "id": "n1",
+              "fr": "un (1)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n2",
+              "fr": "deux (2)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n3",
+              "fr": "trois (3)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n4",
+              "fr": "quatre (4)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n5",
+              "fr": "cinq (5)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            }
+          ]
+        },
+        {
+          "id": "nombres-2",
+          "titre": "De 6 à 10",
+          "items": [
+            {
+              "id": "n6",
+              "fr": "six (6)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n7",
+              "fr": "sept (7)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n8",
+              "fr": "huit (8)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n9",
+              "fr": "neuf (9)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n10",
+              "fr": "dix (10)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            }
+          ]
+        },
+        {
+          "id": "nombres-3",
+          "titre": "Dizaines et centaines",
+          "items": [
+            {
+              "id": "n11",
+              "fr": "onze (11)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n20",
+              "fr": "vingt (20)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n30",
+              "fr": "trente (30)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n50",
+              "fr": "cinquante (50)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "n100",
+              "fr": "cent (100)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "famille",
+      "titre": "Famille",
+      "icone": "👨‍👩‍👧",
+      "lecons": [
+        {
+          "id": "famille-1",
+          "titre": "Parents et enfants",
+          "items": [
+            {
+              "id": "pere",
+              "fr": "père",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "mere",
+              "fr": "mère",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "enfant",
+              "fr": "enfant",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "fils",
+              "fr": "fils",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "fille",
+              "fr": "fille",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "famille",
+              "fr": "famille",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            }
+          ]
+        },
+        {
+          "id": "famille-2",
+          "titre": "Frères, sœurs et aïeux",
+          "items": [
+            {
+              "id": "frere",
+              "fr": "frère",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "soeur",
+              "fr": "sœur",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "grand-pere",
+              "fr": "grand-père",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "grand-mere",
+              "fr": "grand-mère",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "mari",
+              "fr": "mari",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "epouse",
+              "fr": "épouse",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            },
+            {
+              "id": "ami",
+              "fr": "ami(e)",
+              "ngemba": null,
+              "audio": null,
+              "source": null,
+              "statut": "a_saisir"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
