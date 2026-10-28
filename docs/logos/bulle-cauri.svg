@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><radialGradient id="ivoire" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#FFF6DF"/><stop offset="0.7" stop-color="#F0DDB2"/><stop offset="1" stop-color="#DCC08A"/></radialGradient></defs>
+  <path d="M12 3h24a10 10 0 0 1 10 10v14a10 10 0 0 1-10 10H20l-9.5 8.2a1 1 0 0 1-1.6-.9L10 36.8A10 10 0 0 1 2 27V13A10 10 0 0 1 12 3Z" fill="#007A5E"/>
+  <g transform="translate(24 20) rotate(-28) scale(0.62) translate(-24 -24)">
+    <path d="M24 4c8.6 0 14 8.6 14 20s-5.4 20-14 20-14-8.6-14-20S15.4 4 24 4Z" fill="url(#ivoire)" />
+    <path d="M16.5 12.5c1.8-3 4.3-4.8 7-5.2" stroke="#FFFBF0" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+    <path d="M24 8.5c-2 5.5-2.6 11-1.6 15.5S22 32.5 24 39.5c2-5.5 2.6-11 1.6-15.5S26 13.5 24 8.5Z" fill="#4A2A12"/>
+    <path d="M21.7 13.0h-2.2M26.3 13.0h2.2M22.3 16.6h-2.2M25.7 16.6h2.2M22.3 20.2h-2.2M25.7 20.2h2.2M22.3 23.8h-2.2M25.7 23.8h2.2M22.3 27.4h-2.2M25.7 27.4h2.2M22.3 31.0h-2.2M25.7 31.0h2.2M21.7 34.6h-2.2M26.3 34.6h2.2" stroke="#8C5A2E" stroke-width="1.7" stroke-linecap="round"/>
+  </g>
+</svg>
