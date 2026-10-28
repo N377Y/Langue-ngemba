@@ -39,6 +39,25 @@ Points de vente et de diffusion trouvés : [apprendrelengemba.com](https://www.a
 - [Living Dictionaries – ngemba](https://livingdictionaries.app/ngemba/) : dictionnaire en ligne communautaire. Il faut vérifier la variété et la licence.
 - [Global Recordings Network](https://globalrecordings.net/en/language/14925) : enregistrements audio (Bamesso, etc.), utiles pour la prononciation. Vérifier la licence.
 
+## 3 bis. Sources gratuites
+
+| Source | Type | Accès | Utilité |
+|---|---|---|---|
+| [*Aperçu grammatical de la langue ngomba*, Scott A. Satre (SIL)](https://www.sil.org/system/files/reapdata/13/93/43/139343318718198817360097139579754827049/Apercu_grammatical_de_la_langue_ngomba.pdf) | Grammaire en français (PDF) | Gratuit, téléchargeable | Meilleure source gratuite pour la grammaire, à recouper avec celle du Pr Ndé mu Fopinn |
+| [*Dictionnaire Ngomba : français – anglais*, SIL, 2023](https://www.silcam.org/resources/archives/98952) | Application Android, 2 159 entrées | Gratuit a priori (application SIL / Webonary) | Vocabulaire de contrôle, orthographe standard |
+| [Archives SIL Cameroun – langue `jgo`](https://www.silcam.org/fr/resources/search/publisher/17604/language/jgo/availability/1) | Lexique 2003, phonologie, orthographe, articles de S. Satre | Certains documents en ligne, sinon sur demande aux archives | Tons, alphabet, conjugaison |
+| [*Grassfields Bantu Fieldwork: Ngomba Tone Paradigms* (LDC2001S16)](https://catalog.ldc.upenn.edu/LDC2001S16) | Enregistrements audio + transcriptions des tons | Gratuit pour les chercheurs qualifiés (frais d'envoi) | Rare source audio : référence pour les tons |
+| [*Ŋgəmba : premier livre* (J.-J. Fogang, 1984), Indiana University](https://collections.libraries.indiana.edu/africancollections/items/show/1659) | Livre de lecture ngemba-français | Fiche de collection (numérisation à vérifier) | Matériel pédagogique historique |
+| [Omniglot – Ngomba](https://omniglot.com/writing/ngomba.htm) | Alphabet, prononciation | Gratuit | Aperçu rapide |
+| [Living Dictionaries – ngemba](https://livingdictionaries.app/ngemba/entry/bWsncETERXqnt1elFqbI) | Dictionnaire communautaire en ligne | Gratuit | Vocabulaire, peut-être de l'audio (licence à vérifier) |
+| [Blog apprendrelengemba.com](https://apprendrelengemba.com/blog-articles/) | Articles d'initiation | Gratuit (les cours sont payants) | Expressions courantes |
+| [Global Recordings Network – Bamesso](https://globalrecordings.net/en/language/14925) | Audio | Gratuit | Peu de contenu. La présence d'un film *JESUS* en ngomba n'est pas confirmée |
+| Wikipédia [EN](https://en.wikipedia.org/wiki/Bamileke_languages) / [FR](https://franco.wiki/fr/Ngomba.html), [Joshua Project (`jgo`)](https://joshuaproject.net/languages/jgo) | Données générales | Gratuit | Dialectes, villages, nombre de locuteurs |
+
+**Licence :** « gratuit » ne veut pas dire « réutilisable ». Les documents SIL sont en général sous licence Creative Commons (souvent BY-NC-ND), ce qui interdit les œuvres dérivées et l'usage commercial. Il faut lire la licence de chaque document et, en cas de doute, demander une autorisation : SIL Cameroun accorde souvent des autorisations pour des projets de revitalisation linguistique.
+
+**Variété :** les sources SIL décrivent le **ngomba (`jgo`)**. Il faut confirmer qu'il s'agit bien du même ngemba que celui du Pr Ndé mu Fopinn.
+
 ## 4. Ce qui manque et devra être produit
 
 1. **Audio natif** : aucune source trouvée ne fournit un corpus audio exploitable. Il faudra enregistrer des locuteurs pour chaque mot et chaque phrase, ce qui est indispensable pour une langue à tons.
