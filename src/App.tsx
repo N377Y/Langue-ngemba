@@ -6,6 +6,7 @@ import { Parcours } from "./components/Parcours";
 import { Lecon } from "./components/Lecon";
 import { Editeur } from "./components/Editeur";
 import { Icone } from "./components/Icone";
+import { Logo } from "./components/Logo";
 
 type Vue = "parcours" | "editeur";
 
@@ -44,8 +45,11 @@ export default function App() {
       <header className="entete">
         <div className="entete-int">
           <div className="marque">
-            <span className="marque-motif" aria-hidden="true" />
-            ngemba
+            <Logo taille={38} />
+            <div>
+              <div className="marque-nom">poksong</div>
+              <div className="marque-devise">Parlons ensemble</div>
+            </div>
           </div>
           <div className="compteurs">
             <span className="compteur serie" title="Jours d'affilée">

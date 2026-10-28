@@ -124,12 +124,9 @@ input:focus, select:focus { border-color: var(--choisi-bord); outline: none; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--fond); }
 .entete { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--fond); border-bottom: 2px solid var(--bord); }
 .entete-int { display: flex; justify-content: space-between; align-items: center; height: 64px; }
-.marque { display: flex; align-items: center; gap: 10px; font-size: 1.7rem; font-weight: 900; color: var(--primaire); letter-spacing: -0.02em; }
-.marque-motif {
-  width: 30px; height: 30px; border-radius: 9px; background-color: var(--unite-2);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath d='M6 1 11 6 6 11 1 6Z' fill='none' stroke='white' stroke-width='1.6'/%3E%3C/svg%3E");
-  background-size: 10px 10px; box-shadow: 0 3px 0 var(--unite-2-ombre);
-}
+.marque { display: flex; align-items: center; gap: 10px; }
+.marque-nom { font-size: 1.6rem; font-weight: 900; line-height: 1; color: var(--primaire); letter-spacing: -0.02em; }
+.marque-devise { font-size: 0.72rem; font-weight: 800; color: var(--gris); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
 .compteurs { display: flex; gap: 18px; }
 .compteur { display: inline-flex; align-items: center; gap: 4px; font-weight: 800; font-size: 1.1rem; font-variant-numeric: tabular-nums; }
 .compteur.serie { color: var(--flamme); }

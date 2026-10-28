@@ -18,10 +18,13 @@ export function Parcours({ cours, scores, demo, onDemo, onLecon }: Props) {
   const jouable = (l: Lecon) => itemsJouables(l.items).length >= MIN_ITEMS;
   const toutes = cours.unites.flatMap((u) => u.lecons);
   const actuelle = toutes.find((l) => jouable(l) && scores[l.id] === undefined);
+  // Le mode démonstration ne sert que tant qu'une leçon attend son contenu.
+  const afficherDemo = demo || toutes.some((l) => !jouable(l));
   let rang = 0;
 
   return (
     <div className="parcours">
+      {afficherDemo && (
       <label className="apercu">
         <span>
           <strong>Mode démonstration</strong>
@@ -29,6 +32,7 @@ export function Parcours({ cours, scores, demo, onDemo, onLecon }: Props) {
         </span>
         <input type="checkbox" role="switch" className="interrupteur" checked={demo} onChange={(e) => onDemo(e.target.checked)} />
       </label>
+      )}
 
       {cours.unites.map((u, iu) => (
         <section key={u.id} className="unite" style={{ "--u": `var(--unite-${iu % 5})`, "--u-ombre": `var(--unite-${iu % 5}-ombre)` } as CSSProperties}>

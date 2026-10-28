@@ -1,7 +1,7 @@
 {
   "langue": "ngemba",
   "variete": "Bamougoum (Mugum) – ghomálá' de l'Ouest",
-  "version": 2,
+  "version": 3,
   "unites": [
     {
       "id": "salutations",
@@ -100,7 +100,8 @@
               "source": {
                 "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
               },
-              "statut": "a_valider"
+              "statut": "a_valider",
+              "note": "On dit aussi « mmhm »."
             }
           ]
         },
@@ -280,26 +281,35 @@
             {
               "id": "non",
               "fr": "Non",
-              "ngemba": null,
+              "ngemba": "ngang",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "comment-tappelles-tu",
               "fr": "Comment t'appelles-tu ?",
-              "ngemba": null,
+              "ngemba": "ne tsǔ ntsò wǒ ?",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Tons notés par l'équipe, orthographe à confirmer."
             },
             {
               "id": "je-mappelle",
               "fr": "Je m'appelle…",
-              "ngemba": null,
+              "ngemba": "ne tsu ntsa mbe…",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             }
           ]
         }
@@ -324,7 +334,8 @@
                 "ouvrage": "Liste de l'équipe (orthographe usuelle)"
               },
               "statut": "a_valider",
-              "note": "Dans les salutations, « je » se dit má ou mə́ (ex. má ne nddí). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+              "note": "Écrit d'après la prononciation. Dans les phrases, on l'entend má ou mə́ (ex. má ne nddí). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons).",
+              "prononciation": "mwo"
             },
             {
               "id": "pr-tu",
@@ -722,42 +733,58 @@
             {
               "id": "n1",
               "fr": "un (1)",
-              "ngemba": null,
+              "ngemba": "mo'o",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Autre forme : ntah. Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n2",
               "fr": "deux (2)",
-              "ngemba": null,
+              "ngemba": "mpah",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "En comptant : wi mpah. Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n3",
               "fr": "trois (3)",
-              "ngemba": null,
+              "ngemba": "tit",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "En comptant : wi tith. Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n4",
               "fr": "quatre (4)",
-              "ngemba": null,
+              "ngemba": "kwon",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "En comptant : wi ne kwoh. Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n5",
               "fr": "cinq (5)",
-              "ngemba": null,
+              "ngemba": "wi tèh",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "prononciation": "wi taie",
+              "note": "Seul : tèh (cf. me gham tèh, cinquante). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             }
           ]
         },
@@ -768,42 +795,57 @@
             {
               "id": "n6",
               "fr": "six (6)",
-              "ngemba": null,
+              "ngemba": "ntoh kho",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n7",
               "fr": "sept (7)",
-              "ngemba": null,
+              "ngemba": "sa'ambàh",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n8",
               "fr": "huit (8)",
-              "ngemba": null,
+              "ngemba": "ne ha",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n9",
               "fr": "neuf (9)",
-              "ngemba": null,
+              "ngemba": "ne ve'e",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n10",
               "fr": "dix (10)",
-              "ngemba": null,
+              "ngemba": "ne gham",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             }
           ]
         },
@@ -814,42 +856,57 @@
             {
               "id": "n11",
               "fr": "onze (11)",
-              "ngemba": null,
+              "ngemba": "nchoub mo'o",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n20",
               "fr": "vingt (20)",
-              "ngemba": null,
+              "ngemba": "me gham mbah",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "gham (dix) + mbah (deux). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n30",
               "fr": "trente (30)",
-              "ngemba": null,
+              "ngemba": "me gham tith",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "gham (dix) + tith (trois). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n50",
               "fr": "cinquante (50)",
-              "ngemba": null,
+              "ngemba": "me gham tèh",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "gham (dix) + tèh (cinq). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "n100",
               "fr": "cent (100)",
-              "ngemba": null,
+              "ngemba": "nkhro",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             }
           ]
         }
@@ -868,50 +925,68 @@
             {
               "id": "pere",
               "fr": "père",
-              "ngemba": null,
+              "ngemba": "ta'a lla",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "mere",
               "fr": "mère",
-              "ngemba": null,
+              "ngemba": "maa",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "enfant",
               "fr": "enfant",
-              "ngemba": null,
+              "ngemba": "mēh",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "fils",
               "fr": "fils",
-              "ngemba": null,
+              "ngemba": "mēh me mbang",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "mēh (enfant) + mbang (masculin). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "fille",
               "fr": "fille",
-              "ngemba": null,
+              "ngemba": "mēh me njui",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "mēh (enfant) + njui (féminin). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "famille",
               "fr": "famille",
-              "ngemba": null,
+              "ngemba": "ntong de",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             }
           ]
         },
@@ -922,18 +997,24 @@
             {
               "id": "frere",
               "fr": "frère",
-              "ngemba": null,
+              "ngemba": "mǔ mmaa me mbang",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "mǔ mmaa ≈ « enfant de la mère » (à confirmer) + mbang (masculin). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "soeur",
               "fr": "sœur",
-              "ngemba": null,
+              "ngemba": "mǔ mmaa me njui",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "mǔ mmaa ≈ « enfant de la mère » (à confirmer) + njui (féminin). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "grand-pere",
@@ -954,26 +1035,35 @@
             {
               "id": "mari",
               "fr": "mari",
-              "ngemba": null,
+              "ngemba": "ndu ma",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "epouse",
               "fr": "épouse",
-              "ngemba": null,
+              "ngemba": "nju a",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "ami",
               "fr": "ami(e)",
-              "ngemba": null,
+              "ngemba": "ssu'u na",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             }
           ]
         }
