@@ -23,6 +23,8 @@ export function Editeur({ cours, saisies, onChange }: Props) {
   const fichier = useRef<HTMLInputElement>(null);
   const [texteCopie, setTexteCopie] = useState<string | null>(null);
   const [copie, setCopie] = useState(false);
+  const [confirmer, setConfirmer] = useState(false);
+  const nbSaisies = Object.keys(saisies).length;
 
   /** Copie le cours au format JSON : sur la page en ligne, les téléchargements sont bloqués, la copie fonctionne. */
   function copier() {
@@ -100,6 +102,28 @@ export function Editeur({ cours, saisies, onChange }: Props) {
           </button>
           <input ref={fichier} type="file" accept="application/json" hidden onChange={importer} />
         </div>
+        {nbSaisies > 0 && (
+          <div className="reinitialiser">
+            {confirmer ? (
+              <>
+                <span>Effacer vos {nbSaisies} modifications locales et revenir au contenu intégré ?</span>
+                <button className="bouton danger petit" onClick={() => (onChange({}), setConfirmer(false))}>
+                  Effacer
+                </button>
+                <button className="bouton secondaire petit" onClick={() => setConfirmer(false)}>
+                  Annuler
+                </button>
+              </>
+            ) : (
+              <>
+                <span>{nbSaisies} modifications enregistrées dans ce navigateur.</span>
+                <button className="bouton secondaire petit" onClick={() => setConfirmer(true)}>
+                  Revenir au contenu intégré
+                </button>
+              </>
+            )}
+          </div>
+        )}
         {texteCopie && (
           <div className="copie">
             <p>{copie ? "Copié. Collez ce texte dans un message pour l'envoyer." : "Sélectionnez ce texte et copiez-le pour l'envoyer."}</p>
