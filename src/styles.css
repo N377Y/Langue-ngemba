@@ -14,6 +14,10 @@
   --unite-1-ombre: #c47f0c;
   --unite-2: #3767d1;
   --unite-2-ombre: #2a4fa3;
+  --unite-3: #e5484d;
+  --unite-3-ombre: #b8343a;
+  --unite-4: #8e5bd9;
+  --unite-4-ombre: #6c41ad;
   --or: #ffc21a;
   --or-ombre: #dfa200;
   --flamme: #ff8a1f;
@@ -31,6 +35,8 @@
   --verrou: #e3e6e1;
   --verrou-ombre: #c9cec8;
   --police: "Nunito", ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Andika (SIL) est dessinée pour les langues africaines : tons bien placés sur ɛ, ɔ, ə, ʉ, ŋ. */
+  --police-ngemba: "Andika", "Noto Sans", "Charis SIL", "Gentium Plus", system-ui, sans-serif;
   --rayon: 16px;
   font-family: var(--police);
 }
@@ -74,6 +80,10 @@
   --verrou-ombre: #1f2a27;
   color-scheme: dark;
 }
+
+/* Andika complète (un seul fichier) : les fichiers découpés de Google Fonts séparent ɔ, ʉ… de leurs tons. */
+@font-face { font-family: "Andika"; font-weight: 400; font-display: swap; src: url("./assets/fonts/andika-400.woff") format("woff"); }
+@font-face { font-family: "Andika"; font-weight: 700; font-display: swap; src: url("./assets/fonts/andika-700.woff") format("woff"); }
 
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--fond); color: var(--texte); font-family: var(--police); -webkit-font-smoothing: antialiased; }
@@ -226,6 +236,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 }
 .mot-ngemba { display: flex; align-items: center; gap: 12px; font-size: 2.4rem; font-weight: 900; line-height: 1.25; }
 .mot-fr { font-size: 1.25rem; font-weight: 700; color: var(--gris); }
+.mot-prononciation { font-size: 0.95rem; font-weight: 700; color: var(--choisi-texte); }
 .mot-note { font-weight: 600; max-width: 40ch; }
 
 .tuile {
@@ -311,7 +322,7 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .editeur-lecon h2 span { color: var(--gris); }
 .lignes { display: flex; flex-direction: column; gap: 10px; }
 .ligne {
-  display: grid; grid-template-columns: 2fr 2fr 1fr 1.3fr; gap: 8px 10px; align-items: end;
+  display: grid; grid-template-columns: 2fr 1.5fr 2fr 0.8fr 1.3fr; gap: 8px 10px; align-items: end;
   padding: 12px 14px; border: 2px solid var(--bord); border-radius: var(--rayon);
 }
 .ligne-fr { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; gap: 10px; font-weight: 800; }
@@ -327,3 +338,14 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 .pastille-statut.a_saisir { background: var(--surface); color: var(--gris); border: 2px solid var(--bord); }
 .pastille-statut.a_valider { background: var(--orange-clair); color: var(--orange-texte); }
 .pastille-statut.valide { background: var(--vert-clair); color: var(--vert-texte); }
+
+.copie { display: flex; flex-direction: column; gap: 8px; margin-top: 14px; }
+.copie p { margin: 0; color: var(--texte); font-weight: 700; }
+.copie textarea {
+  width: 100%; height: 160px; padding: 10px; border: 2px solid var(--bord); border-radius: 12px; resize: vertical;
+  background: var(--surface); color: var(--texte); font: 0.8rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.ng, .verdict-reponse, .mot-ngemba, .enonce.ngemba, .tuile.ngemba, .champ-reponse, .touche-clavier, .champ.ngemba input {
+  font-family: var(--police-ngemba);
+}

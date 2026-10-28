@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import type { Cours, Item, Statut } from "../types";
 import type { Saisies } from "../lib/storage";
 import { Clavier } from "./Clavier";
@@ -21,6 +21,19 @@ function telecharger(nom: string, contenu: string) {
 export function Editeur({ cours, saisies, onChange }: Props) {
   const dernierChamp = useRef<HTMLInputElement | null>(null);
   const fichier = useRef<HTMLInputElement>(null);
+  const [texteCopie, setTexteCopie] = useState<string | null>(null);
+  const [copie, setCopie] = useState(false);
+
+  /** Copie le cours au format JSON : sur la page en ligne, les téléchargements sont bloqués, la copie fonctionne. */
+  function copier() {
+    const json = JSON.stringify(cours, null, 2);
+    setTexteCopie(json);
+    setCopie(false);
+    navigator.clipboard?.writeText(json).then(
+      () => setCopie(true),
+      () => setCopie(false),
+    );
+  }
 
   function maj(item: Item, champ: Partial<Item>) {
     const suite = { ...saisies[item.id], ...champ };
@@ -49,7 +62,7 @@ export function Editeur({ cours, saisies, onChange }: Props) {
       const importe = JSON.parse(t) as Cours;
       const s: Saisies = { ...saisies };
       for (const u of importe.unites) for (const l of u.lecons) for (const i of l.items) {
-        if (i.ngemba) s[i.id] = { ngemba: i.ngemba, note: i.note, statut: i.statut, source: i.source };
+        if (i.ngemba) s[i.id] = { ngemba: i.ngemba, prononciation: i.prononciation, note: i.note, statut: i.statut, source: i.source };
       }
       onChange(s);
     });
@@ -66,7 +79,7 @@ export function Editeur({ cours, saisies, onChange }: Props) {
         <h1>Contenu du cours</h1>
         <p>
           Saisissez les mots en ngemba de Bamougoum à partir des ouvrages de référence, en notant l'ouvrage et la page. Les saisies sont
-          gardées dans ce navigateur. <em>Exporter</em> produit le fichier <code>cours.json</code> à placer dans <code>src/content/</code>.
+          gardées dans ce navigateur. <em>Copier</em> donne le texte du cours, à envoyer pour l'intégrer à l'application.
         </p>
         <div className="jauge" aria-hidden="true">
           <div className="jauge-valide" style={{ width: `${(100 * valides) / tous.length}%` }} />
@@ -79,11 +92,20 @@ export function Editeur({ cours, saisies, onChange }: Props) {
           <button className="bouton secondaire petit" onClick={() => telecharger("cours.json", JSON.stringify(cours, null, 2) + "\n")}>
             Exporter
           </button>
+          <button className="bouton secondaire petit" onClick={copier}>
+            Copier
+          </button>
           <button className="bouton secondaire petit" onClick={() => fichier.current?.click()}>
             Importer
           </button>
           <input ref={fichier} type="file" accept="application/json" hidden onChange={importer} />
         </div>
+        {texteCopie && (
+          <div className="copie">
+            <p>{copie ? "Copié. Collez ce texte dans un message pour l'envoyer." : "Sélectionnez ce texte et copiez-le pour l'envoyer."}</p>
+            <textarea id="copie-json" readOnly value={texteCopie} onFocus={(e) => e.target.select()} />
+          </div>
+        )}
       </section>
 
       <div className="clavier-collant">
@@ -110,6 +132,15 @@ export function Editeur({ cours, saisies, onChange }: Props) {
                       value={i.ngemba ?? ""}
                       onFocus={(e) => (dernierChamp.current = e.target)}
                       onChange={(e) => maj(i, { ngemba: e.target.value.normalize("NFC") || null })}
+                    />
+                  </label>
+                  <label className="champ">
+                    <span>Se lit</span>
+                    <input
+                      id={`pr-${i.id}`}
+                      value={i.prononciation ?? ""}
+                      placeholder="ex. o li a"
+                      onChange={(e) => maj(i, { prononciation: e.target.value || undefined })}
                     />
                   </label>
                   <label className="champ">

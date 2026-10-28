@@ -11,7 +11,7 @@ export interface Progres {
 }
 
 /** Modifications faites dans l'éditeur, par id d'élément. */
-export type Saisies = Record<string, Partial<Pick<Item, "ngemba" | "note" | "statut" | "source">>>;
+export type Saisies = Record<string, Partial<Pick<Item, "ngemba" | "prononciation" | "note" | "statut" | "source">>>;
 
 function lire<T>(cle: string, defaut: T): T {
   try {

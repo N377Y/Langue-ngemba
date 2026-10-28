@@ -31,7 +31,7 @@ export function Parcours({ cours, scores, demo, onDemo, onLecon }: Props) {
       </label>
 
       {cours.unites.map((u, iu) => (
-        <section key={u.id} className="unite" style={{ "--u": `var(--unite-${iu % 3})`, "--u-ombre": `var(--unite-${iu % 3}-ombre)` } as CSSProperties}>
+        <section key={u.id} className="unite" style={{ "--u": `var(--unite-${iu % 5})`, "--u-ombre": `var(--unite-${iu % 5}-ombre)` } as CSSProperties}>
           <div className="banniere">
             <div>
               <div className="surtitre">Unité {iu + 1}</div>

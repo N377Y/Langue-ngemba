@@ -38,6 +38,18 @@ Points de vente : [apprendrelengemba.com](https://www.apprendrelengemba.com/), [
 
 > ⚠️ **Droits d'auteur** : il faut une autorisation écrite de l'auteur ou des Éditions ACCOM pour reprendre ce contenu dans l'application. Prévoir une proposition de partenariat.
 
+## 2 bis. Sources communautaires en ŋgəmba (déjà utilisées dans le prototype)
+
+| Source | Contenu | Utilisé pour |
+|---|---|---|
+| **Gabriel Deeh Segallo** (Douala), planches illustrées : *Məŋŋwó, les mois* (2022), *Ppó ŋyɛ̀, la main* (2015), *La tête annotée en langue ŋgə̂mbà* | Vocabulaire en orthographe AGLC, avec les tons | Unité « Les mois » et la leçon « Le corps » (main, doigts) |
+| **Promouvons nos langues** (Facebook, YouTube, Instagram, TikTok : `@promouvonsnoslangues`), vidéo « Salutations / Cà'cə » en ŋgəmba | Salutations du matin, de la journée et du soir, prendre des nouvelles, avec les réponses | Unité « Salutations », leçons 1 et 2 |
+| Liste de l'équipe (locuteurs) | Mots du quotidien, pronoms, paires de tons (kwò / kwó, pa / pá, pé / pè) | Unité « Les bases », leçon « Politesse ». L'orthographe usuelle est à transcrire en AGLC |
+
+Ces deux auteurs ont les mêmes droits que le Pr Ndé mu Fopinn (contenu protégé, « © »). Il faut leur demander l'autorisation avant toute diffusion publique. Ce sont aussi des partenaires naturels du projet : relecture, enregistrements audio.
+
+**Orthographe de référence :** l'application suit l'alphabet AGLC, comme ces sources : ɛ, ɔ, ə, ʉ, ŋ, l'apostrophe ' pour le coup de glotte, et les tons notés par des accents (á haut, à bas, â descendant, ǎ montant). L'écriture usuelle « à la française » (ex. *o li a*) est gardée dans le champ *prononciation* pour aider les débutants.
+
 ## 3. Sources gratuites
 
 | Source | Variété | Accès | Utilité |

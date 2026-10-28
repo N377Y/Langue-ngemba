@@ -43,6 +43,7 @@ export function Decouverte({ ex, onRepondu, verrouille }: Props<Extract<Exercice
             {ex.item.ngemba}
             <BoutonAudio item={ex.item} />
           </div>
+          {ex.item.prononciation && <div className="mot-prononciation">Se lit à peu près « {ex.item.prononciation} »</div>}
           <div className="mot-fr">{ex.item.fr}</div>
           {ex.item.note && <div className="mot-note">{ex.item.note}</div>}
         </div>
@@ -85,7 +86,7 @@ export function Qcm({ ex, onRepondu, verrouille }: Props<Extract<Exercice, { typ
         </div>
         <div className="choix">
           {ex.choix.map((c, n) => (
-            <button key={c.id} disabled={verrouille} className={`tuile ${choisi === c.id ? "choisie" : ""}`} onClick={() => setChoisi(c.id)}>
+            <button key={c.id} disabled={verrouille} className={`tuile ${versNgemba ? "ngemba" : ""} ${choisi === c.id ? "choisie" : ""}`} onClick={() => setChoisi(c.id)}>
               <span className="touche">{n + 1}</span>
               <span>{libelle(c)}</span>
             </button>

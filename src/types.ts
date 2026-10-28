@@ -12,6 +12,8 @@ export interface Item {
   fr: string;
   /** Forme en ngemba (Bamougoum), avec tons. `null` tant qu'elle n'est pas saisie. */
   ngemba: string | null;
+  /** Lecture approximative à la française, pour les débutants (ex. « o li a »). */
+  prononciation?: string;
   /** Remarque d'usage (contexte, registre…). */
   note?: string;
   /** Chemin d'un fichier audio, enregistré par un locuteur. */

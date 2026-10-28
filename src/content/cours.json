@@ -1,12 +1,12 @@
 {
   "langue": "ngemba",
   "variete": "Bamougoum (Mugum) – ghomálá' de l'Ouest",
-  "version": 1,
+  "version": 2,
   "unites": [
     {
       "id": "salutations",
       "titre": "Salutations",
-      "description": "Saluer, remercier, prendre des nouvelles",
+      "description": "Saluer le matin, la journée et le soir",
       "icone": "discussion",
       "lecons": [
         {
@@ -14,52 +14,93 @@
           "titre": "Se saluer",
           "items": [
             {
-              "id": "bonjour-matin",
-              "fr": "Bonjour (le matin)",
-              "ngemba": null,
+              "id": "salut",
+              "fr": "Salut ! (je salue)",
+              "ngemba": "mə́ cà'cə",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "note": "Pour un groupe : ŋgə́ cà'cə (nous saluons). On ajoute ɔ́ ou wʉ́ selon la personne saluée."
             },
             {
-              "id": "bonjour-jour",
-              "fr": "Bonjour (dans la journée)",
-              "ngemba": null,
+              "id": "dormi-question",
+              "fr": "Bonjour ! (as-tu dormi ?)",
+              "ngemba": "ɔ́ llí á ?",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "prononciation": "o li a",
+              "note": "Salutation du matin : on demande à l'autre s'il a dormi."
+            },
+            {
+              "id": "dormi-reponse",
+              "fr": "Oui, j'ai dormi",
+              "ngemba": "má ne nddí",
+              "audio": null,
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "prononciation": "me ni ndi",
+              "note": "Pour un groupe : ŋgə́ ne nddí (nous avons dormi)."
+            },
+            {
+              "id": "dormi-comment",
+              "fr": "Comment as-tu dormi ?",
+              "ngemba": "ɔ́ llí mbá ŋgə̀ kɔ̀ ?",
+              "audio": null,
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider"
             },
             {
               "id": "bonsoir",
-              "fr": "Bonsoir",
-              "ngemba": null,
+              "fr": "Bonjour, bonsoir (dans la journée)",
+              "ngemba": "ɔ́ tsɔ́k á ?",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "prononciation": "o tso kha",
+              "note": "Salutation de l'après-midi et du soir."
             },
             {
-              "id": "bienvenue",
-              "fr": "Bienvenue",
-              "ngemba": null,
+              "id": "bonsoir-reponse",
+              "fr": "Réponse au bonsoir",
+              "ngemba": "má ne ndzɔ́k",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "note": "Pour un groupe : ŋgə́ ne ndzɔ́k."
             },
             {
-              "id": "au-revoir",
-              "fr": "Au revoir",
-              "ngemba": null,
+              "id": "bonne-nuit",
+              "fr": "Bonne nuit",
+              "ngemba": "llí pəpɔ́ŋ",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "note": "Variante : llí mbɛ̂ ntʉ̀. On répond ə́ə́ (oui)."
             },
             {
-              "id": "merci",
-              "fr": "Merci",
-              "ngemba": null,
+              "id": "oui",
+              "fr": "Oui",
+              "ngemba": "ə́ə́",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider"
             }
           ]
         },
@@ -68,36 +109,173 @@
           "titre": "Prendre des nouvelles",
           "items": [
             {
-              "id": "comment-vas-tu",
-              "fr": "Comment vas-tu ?",
-              "ngemba": null,
+              "id": "ca-va-question",
+              "fr": "Comment ça va ?",
+              "ngemba": "â kɔ̀ ?",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider"
             },
             {
-              "id": "je-vais-bien",
-              "fr": "Je vais bien",
-              "ngemba": null,
+              "id": "ca-va",
+              "fr": "Ça va",
+              "ngemba": "á láŋcə̀",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "prononciation": "a la ncheu"
+            },
+            {
+              "id": "comment-vas-tu",
+              "fr": "Comment vas-tu ?",
+              "ngemba": "cwə̌ŋ ŋgə̀ kɔ̀ ?",
+              "audio": null,
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "prononciation": "ang ge koh"
+            },
+            {
+              "id": "ca-va-bien",
+              "fr": "Ça va bien",
+              "ngemba": "á pétnə̀",
+              "audio": null,
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "comment-portes-tu",
+              "fr": "Comment te portes-tu ?",
+              "ngemba": "ɔ̂ ntʉ̀ á ?",
+              "audio": null,
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "note": "Variante : ɔ́ a ntʉ á ?"
+            },
+            {
+              "id": "je-me-porte-bien",
+              "fr": "Je me porte bien",
+              "ngemba": "mə̂ təntʉ́",
+              "audio": null,
+              "source": {
+                "ouvrage": "Vidéo « Salutations » en ŋgəmba – Promouvons nos langues"
+              },
+              "statut": "a_valider",
+              "note": "Autre réponse : mə bhɛ̂ ntʉ̀. Sens exact à confirmer."
             },
             {
               "id": "et-toi",
               "fr": "Et toi ?",
-              "ngemba": null,
+              "ngemba": "ta wo chong",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            }
+          ]
+        },
+        {
+          "id": "salutations-3",
+          "titre": "Politesse",
+          "items": [
+            {
+              "id": "bienvenue",
+              "fr": "Bienvenue",
+              "ngemba": "Su pe pong",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
-              "id": "oui",
-              "fr": "Oui",
-              "ngemba": null,
+              "id": "merci",
+              "fr": "Merci",
+              "ngemba": "A chamba",
               "audio": null,
-              "source": null,
-              "statut": "a_saisir"
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "au-revoir",
+              "fr": "Au revoir",
+              "ngemba": "Alè mba",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Aussi : shi pe pong. Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "viens",
+              "fr": "Viens",
+              "ngemba": "Suu",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "viens-voir",
+              "fr": "Viens voir",
+              "ngemba": "Suu nko",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "ca-te-plait",
+              "fr": "C'est bon ? Ça te plaît ?",
+              "ngemba": "Apongha ?",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "ca-me-plait",
+              "fr": "Ça me plaît",
+              "ngemba": "Apong",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "parlons-ensemble",
+              "fr": "Parlons ensemble",
+              "ngemba": "Pok song ne ngha la",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
             },
             {
               "id": "non",
@@ -122,6 +300,410 @@
               "audio": null,
               "source": null,
               "statut": "a_saisir"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bases",
+      "titre": "Les bases",
+      "description": "Pronoms, tons et premiers mots",
+      "icone": "lettres",
+      "lecons": [
+        {
+          "id": "bases-pronoms",
+          "titre": "Les pronoms",
+          "items": [
+            {
+              "id": "pr-je",
+              "fr": "je",
+              "ngemba": "Mwo",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Dans les salutations, « je » se dit má ou mə́ (ex. má ne nddí). Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "pr-tu",
+              "fr": "tu",
+              "ngemba": "Wwo",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "pr-il",
+              "fr": "il, elle",
+              "ngemba": "Ssi",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "pr-nous",
+              "fr": "nous",
+              "ngemba": "Peu",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "pr-vous",
+              "fr": "vous",
+              "ngemba": "Pu",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "pr-ils",
+              "fr": "ils, elles, eux",
+              "ngemba": "Woop",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            }
+          ]
+        },
+        {
+          "id": "bases-tons",
+          "titre": "Écoute les tons",
+          "items": [
+            {
+              "id": "kwo-bas",
+              "fr": "chaise",
+              "ngemba": "Kwò",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Ton bas. À ne pas confondre avec kwó (monter)."
+            },
+            {
+              "id": "kwo-haut",
+              "fr": "monter ; montagne, échelle",
+              "ngemba": "Kwó",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Ton haut. À ne pas confondre avec kwò (chaise)."
+            },
+            {
+              "id": "pa-sac",
+              "fr": "sac",
+              "ngemba": "Pa",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "pa-attention",
+              "fr": "fais attention",
+              "ngemba": "Pá",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Ton haut."
+            },
+            {
+              "id": "pa-case",
+              "fr": "la case",
+              "ngemba": "Pa a",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "pe-dehors",
+              "fr": "dehors ; ramasse",
+              "ngemba": "Pé",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Ton haut. À ne pas confondre avec pè (profit)."
+            },
+            {
+              "id": "pe-profit",
+              "fr": "profit",
+              "ngemba": "Pè",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Ton bas."
+            },
+            {
+              "id": "etincelle",
+              "fr": "étincelle",
+              "ngemba": "Peu pa",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            }
+          ]
+        },
+        {
+          "id": "bases-corps",
+          "titre": "Le corps et la toilette",
+          "items": [
+            {
+              "id": "corps",
+              "fr": "corps",
+              "ngemba": "Nit",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "laver",
+              "fr": "laver ; savon",
+              "ngemba": "Sok",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "laver-corps",
+              "fr": "laver le corps",
+              "ngemba": "Sok nit",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "habit",
+              "fr": "habit",
+              "ngemba": "Ndze",
+              "audio": null,
+              "source": {
+                "ouvrage": "Liste de l'équipe (orthographe usuelle)"
+              },
+              "statut": "a_valider",
+              "note": "Orthographe usuelle, à transcrire en alphabet AGLC (avec les tons)."
+            },
+            {
+              "id": "main",
+              "fr": "la main",
+              "ngemba": "Ppó ŋyɛ̀",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Ppó ŋyɛ̀, la main (2015)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "main-gauche",
+              "fr": "main gauche",
+              "ngemba": "Ppò kwèpə̀",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Ppó ŋyɛ̀, la main (2015)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "main-droite",
+              "fr": "main droite",
+              "ngemba": "Ppò tùù",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Ppó ŋyɛ̀, la main (2015)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "doigts",
+              "fr": "les doigts",
+              "ngemba": "mə nthwómbbó",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Ppó ŋyɛ̀, la main (2015)"
+              },
+              "statut": "a_valider"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mois",
+      "titre": "Les mois",
+      "description": "Məŋŋwó : les douze mois de l'année",
+      "icone": "calendrier",
+      "lecons": [
+        {
+          "id": "mois-1",
+          "titre": "Janvier à juin",
+          "items": [
+            {
+              "id": "janvier",
+              "fr": "janvier",
+              "ngemba": "Ŋkhwânnə̀",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "fevrier",
+              "fr": "février",
+              "ngemba": "Nsɛ̂nxwʉ̀n",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "mars",
+              "fr": "mars",
+              "ngemba": "Mbbîtsó",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "avril",
+              "fr": "avril",
+              "ngemba": "Chó",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "mai",
+              "fr": "mai",
+              "ngemba": "Nssônnà",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "juin",
+              "fr": "juin",
+              "ngemba": "Ŋkâpnjap",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            }
+          ]
+        },
+        {
+          "id": "mois-2",
+          "titre": "Juillet à décembre",
+          "items": [
+            {
+              "id": "juillet",
+              "fr": "juillet",
+              "ngemba": "Ncœ̂tŋgəsáŋ",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "aout",
+              "fr": "août",
+              "ngemba": "Ŋkwômə̀zháŋ",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "septembre",
+              "fr": "septembre",
+              "ngemba": "Ndzʉ̂'mə̀kwʉ́",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "octobre",
+              "fr": "octobre",
+              "ngemba": "Ntâmŋkhin",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "novembre",
+              "fr": "novembre",
+              "ngemba": "Thwólùm",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
+            },
+            {
+              "id": "decembre",
+              "fr": "décembre",
+              "ngemba": "Mbʉ̂'mə̀kwʉ́",
+              "audio": null,
+              "source": {
+                "ouvrage": "Gabriel Deeh Segallo – Məŋŋwó, les mois (2022)"
+              },
+              "statut": "a_valider"
             }
           ]
         }

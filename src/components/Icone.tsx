@@ -60,6 +60,24 @@ const TRACES = {
       123
     </text>
   ),
+  lettres: (
+    <text x="12" y="17" textAnchor="middle" fontSize="14" fontWeight="900" fontFamily="Nunito, system-ui, sans-serif" fill="currentColor">
+      Aa
+    </text>
+  ),
+  calendrier: (
+    <>
+      <rect x="3.5" y="5" width="17" height="15.5" rx="3" stroke="currentColor" strokeWidth="2.2" fill="none" />
+      <path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+      <rect x="7" y="13" width="4" height="4" rx="1" fill="currentColor" />
+    </>
+  ),
+  copier: (
+    <>
+      <rect x="8" y="8" width="12" height="12.5" rx="2.5" stroke="currentColor" strokeWidth="2.2" fill="none" />
+      <path d="M16 8V5.5A2 2 0 0 0 14 3.5H6A2 2 0 0 0 4 5.5V14a2 2 0 0 0 2 2h2" stroke="currentColor" strokeWidth="2.2" fill="none" />
+    </>
+  ),
   famille: (
     <>
       <circle cx="8" cy="6.5" r="3" fill="currentColor" />
