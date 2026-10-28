@@ -1,6 +1,6 @@
 # Langue Ngemba
 
-Application d'apprentissage des langues camerounaises (dans l'esprit de Duolingo / HelloChinese), en commençant par le **ngemba / nguemba**.
+Application d'apprentissage des langues camerounaises (dans l'esprit de Duolingo / HelloChinese), en commençant par le **ngemba / nguemba de Bamougoum** (groupe ghomálá' de l'Ouest).
 
 ## État du projet
 
