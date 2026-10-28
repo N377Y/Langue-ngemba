@@ -29,6 +29,8 @@ export interface Lecon {
 export interface Unite {
   id: string;
   titre: string;
+  description: string;
+  /** Nom d'une icône de `components/Icone.tsx`. */
   icone: string;
   lecons: Lecon[];
 }

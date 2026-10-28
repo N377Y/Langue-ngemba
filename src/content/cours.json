@@ -6,7 +6,8 @@
     {
       "id": "salutations",
       "titre": "Salutations",
-      "icone": "👋",
+      "description": "Saluer, remercier, prendre des nouvelles",
+      "icone": "discussion",
       "lecons": [
         {
           "id": "salutations-1",
@@ -129,7 +130,8 @@
     {
       "id": "nombres",
       "titre": "Nombres",
-      "icone": "🔢",
+      "description": "Compter de 1 à 100",
+      "icone": "nombres",
       "lecons": [
         {
           "id": "nombres-1",
@@ -274,7 +276,8 @@
     {
       "id": "famille",
       "titre": "Famille",
-      "icone": "👨‍👩‍👧",
+      "description": "Parler de ses proches",
+      "icone": "famille",
       "lecons": [
         {
           "id": "famille-1",

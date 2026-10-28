@@ -58,79 +58,90 @@ export function Editeur({ cours, saisies, onChange }: Props) {
 
   const tous = cours.unites.flatMap((u) => u.lecons.flatMap((l) => l.items));
   const remplis = tous.filter((i) => i.ngemba).length;
+  const valides = tous.filter((i) => i.statut === "valide").length;
 
   return (
     <div className="editeur">
-      <p className="aide">
-        Saisissez les formes en ngemba de Bamougoum à partir des ouvrages de référence, en notant l'ouvrage et la page. Les saisies
-        restent dans ce navigateur. Utilisez <em>Exporter</em> pour obtenir le fichier <code>cours.json</code> à placer dans{" "}
-        <code>src/content/</code>.
-      </p>
-      <div className="outils">
-        <span>
-          {remplis}/{tous.length} mots saisis
-        </span>
-        <button onClick={() => telecharger("cours.json", JSON.stringify(cours, null, 2) + "\n")}>Exporter</button>
-        <button onClick={() => fichier.current?.click()}>Importer</button>
-        <input ref={fichier} type="file" accept="application/json" hidden onChange={importer} />
-      </div>
+      <section className="editeur-bilan">
+        <h1>Contenu du cours</h1>
+        <p>
+          Saisissez les mots en ngemba de Bamougoum à partir des ouvrages de référence, en notant l'ouvrage et la page. Les saisies sont
+          gardées dans ce navigateur. <em>Exporter</em> produit le fichier <code>cours.json</code> à placer dans <code>src/content/</code>.
+        </p>
+        <div className="jauge" aria-hidden="true">
+          <div className="jauge-valide" style={{ width: `${(100 * valides) / tous.length}%` }} />
+          <div className="jauge-saisi" style={{ width: `${(100 * (remplis - valides)) / tous.length}%` }} />
+        </div>
+        <div className="editeur-actions">
+          <span>
+            <strong>{remplis}</strong> / {tous.length} mots saisis · <strong>{valides}</strong> validés
+          </span>
+          <button className="bouton secondaire petit" onClick={() => telecharger("cours.json", JSON.stringify(cours, null, 2) + "\n")}>
+            Exporter
+          </button>
+          <button className="bouton secondaire petit" onClick={() => fichier.current?.click()}>
+            Importer
+          </button>
+          <input ref={fichier} type="file" accept="application/json" hidden onChange={importer} />
+        </div>
+      </section>
+
       <div className="clavier-collant">
         <Clavier onTouche={inserer} />
       </div>
+
       {cours.unites.map((u) =>
         u.lecons.map((l) => (
-          <section key={l.id}>
-            <h3>
-              {u.icone} {u.titre} – {l.titre}
-            </h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>Français</th>
-                  <th>Ngemba</th>
-                  <th>Ouvrage</th>
-                  <th>Page</th>
-                  <th>Statut</th>
-                </tr>
-              </thead>
-              <tbody>
-                {l.items.map((i) => (
-                  <tr key={i.id} className={i.statut}>
-                    <td>{i.fr}</td>
-                    <td>
-                      <input
-                        value={i.ngemba ?? ""}
-                        onFocus={(e) => (dernierChamp.current = e.target)}
-                        onChange={(e) => maj(i, { ngemba: e.target.value.normalize("NFC") || null })}
-                      />
-                    </td>
-                    <td>
-                      <input
-                        value={i.source?.ouvrage ?? ""}
-                        placeholder="ex. Longam"
-                        onChange={(e) => maj(i, { source: { ...i.source, ouvrage: e.target.value } })}
-                      />
-                    </td>
-                    <td>
-                      <input
-                        className="court"
-                        value={i.source?.page ?? ""}
-                        onChange={(e) => maj(i, { source: { ouvrage: i.source?.ouvrage ?? "", page: e.target.value } })}
-                      />
-                    </td>
-                    <td>
-                      <select value={i.statut} onChange={(e) => maj(i, { statut: e.target.value as Statut })}>
-                        {Object.entries(STATUTS).map(([v, t]) => (
-                          <option key={v} value={v}>
-                            {t}
-                          </option>
-                        ))}
-                      </select>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <section key={l.id} className="editeur-lecon">
+            <h2>
+              {u.titre} <span>· {l.titre}</span>
+            </h2>
+            <div className="lignes">
+              {l.items.map((i) => (
+                <div key={i.id} className="ligne">
+                  <div className="ligne-fr">
+                    {i.fr}
+                    <span className={`pastille-statut ${i.statut}`}>{STATUTS[i.statut]}</span>
+                  </div>
+                  <label className="champ ngemba">
+                    <span>Ngemba</span>
+                    <input
+                      id={`ng-${i.id}`}
+                      value={i.ngemba ?? ""}
+                      onFocus={(e) => (dernierChamp.current = e.target)}
+                      onChange={(e) => maj(i, { ngemba: e.target.value.normalize("NFC") || null })}
+                    />
+                  </label>
+                  <label className="champ">
+                    <span>Ouvrage</span>
+                    <input
+                      id={`ouv-${i.id}`}
+                      value={i.source?.ouvrage ?? ""}
+                      placeholder="ex. Longam"
+                      onChange={(e) => maj(i, { source: { ...i.source, ouvrage: e.target.value } })}
+                    />
+                  </label>
+                  <label className="champ court">
+                    <span>Page</span>
+                    <input
+                      id={`p-${i.id}`}
+                      value={i.source?.page ?? ""}
+                      onChange={(e) => maj(i, { source: { ouvrage: i.source?.ouvrage ?? "", page: e.target.value } })}
+                    />
+                  </label>
+                  <label className="champ">
+                    <span>Statut</span>
+                    <select id={`st-${i.id}`} value={i.statut} onChange={(e) => maj(i, { statut: e.target.value as Statut })}>
+                      {Object.entries(STATUTS).map(([v, t]) => (
+                        <option key={v} value={v}>
+                          {t}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                </div>
+              ))}
+            </div>
           </section>
         )),
       )}

@@ -13,12 +13,12 @@ export function Clavier({ onTouche }: { onTouche: (car: string) => void }) {
   return (
     <div className="clavier" aria-label="Caractères spéciaux">
       {LETTRES.map((c) => (
-        <button key={c} type="button" onClick={() => onTouche(c)}>
+        <button key={c} type="button" className="touche-clavier" onClick={() => onTouche(c)}>
           {c}
         </button>
       ))}
       {TONS.map((t) => (
-        <button key={t.nom} type="button" title={`ton ${t.nom}`} onClick={() => onTouche(t.car)}>
+        <button key={t.nom} type="button" className="touche-clavier" title={`ton ${t.nom}`} onClick={() => onTouche(t.car)}>
           {"a" + t.car}
         </button>
       ))}

@@ -5,6 +5,7 @@ import { chargerProgres, chargerSaisies, sauverProgres, sauverSaisies, terminerL
 import { Parcours } from "./components/Parcours";
 import { Lecon } from "./components/Lecon";
 import { Editeur } from "./components/Editeur";
+import { Icone } from "./components/Icone";
 
 type Vue = "parcours" | "editeur";
 
@@ -25,49 +26,60 @@ export default function App() {
 
   if (lecon) {
     return (
-      <main className="app">
-        <Lecon
-          lecon={lecon}
-          onQuitter={() => setLecon(null)}
-          onFin={(score, xp) => {
-            const p = terminerLecon(progres, lecon.id, score, xp);
-            setProgres(p);
-            sauverProgres(p);
-            setLecon(null);
-          }}
-        />
-      </main>
+      <Lecon
+        lecon={lecon}
+        onQuitter={() => setLecon(null)}
+        onFin={(score, xp) => {
+          const p = terminerLecon(progres, lecon.id, score, xp);
+          setProgres(p);
+          sauverProgres(p);
+          setLecon(null);
+        }}
+      />
     );
   }
 
   return (
-    <main className="app">
-      <header>
-        <h1>Ngemba</h1>
-        <div className="stats">
-          <span title="Série de jours">🔥 {progres.serie}</span>
-          <span title="Points d'expérience">⭐ {progres.xp} XP</span>
+    <div className="ecran">
+      <header className="entete">
+        <div className="entete-int">
+          <div className="marque">
+            <span className="marque-motif" aria-hidden="true" />
+            ngemba
+          </div>
+          <div className="compteurs">
+            <span className="compteur serie" title="Jours d'affilée">
+              <Icone nom="flamme" taille={22} />
+              {progres.serie}
+            </span>
+            <span className="compteur xp" title="Points d'expérience">
+              <Icone nom="eclair" taille={22} />
+              {progres.xp}
+            </span>
+          </div>
         </div>
       </header>
-      <nav className="onglets">
-        <button className={vue === "parcours" ? "actif" : ""} onClick={() => setVue("parcours")}>
-          Apprendre
-        </button>
-        <button className={vue === "editeur" ? "actif" : ""} onClick={() => setVue("editeur")}>
-          Contenu
-        </button>
-      </nav>
 
-      {vue === "parcours" && (
-        <>
-          <label className="demo">
-            <input type="checkbox" checked={demo} onChange={(e) => setDemo(e.target.checked)} />
-            Mode démonstration (remplace les mots manquants par ‹le français›, ce n'est pas du ngemba)
-          </label>
-          <Parcours cours={coursJoue} scores={progres.leconsFinies} onLecon={setLecon} />
-        </>
-      )}
-      {vue === "editeur" && <Editeur cours={cours} saisies={saisies} onChange={changerSaisies} />}
-    </main>
+      <main className="contenu">
+        {vue === "parcours" ? (
+          <Parcours cours={coursJoue} scores={progres.leconsFinies} demo={demo} onDemo={setDemo} onLecon={setLecon} />
+        ) : (
+          <Editeur cours={cours} saisies={saisies} onChange={changerSaisies} />
+        )}
+      </main>
+
+      <nav className="navigation">
+        <div className="navigation-int">
+          <button className={vue === "parcours" ? "actif" : ""} onClick={() => setVue("parcours")}>
+            <Icone nom="livre" taille={26} />
+            Apprendre
+          </button>
+          <button className={vue === "editeur" ? "actif" : ""} onClick={() => setVue("editeur")}>
+            <Icone nom="crayon" taille={26} />
+            Contenu
+          </button>
+        </div>
+      </nav>
+    </div>
   );
 }
